@@ -1,6 +1,7 @@
 import React from 'react';
+
 import './LoginForm.css';
-import wineImage from '../../img-login.jpg';
+import wineImage from './img-login.jpg';
 
 function Login({ username, setUsername, password, setPassword, handleLogin }) {
   return (

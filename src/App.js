@@ -1,6 +1,4 @@
-import React, { useState } from 'react';
-
-
+import React, { useState, useEffect } from 'react';
 import Video from './Components/Video/Video';
 import Login from './Components/Login/Login';
 
@@ -9,13 +7,26 @@ function App() {
   const [password, setPassword] = useState('');
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+  useEffect(() => {
+    const loggedInStatus = localStorage.getItem('isLoggedIn');
+    if (loggedInStatus === 'true') {
+      setIsLoggedIn(true);
+    }
+  }, []);
+
   const handleLogin = (e) => {
     e.preventDefault();
     if (username === 'millesime' && password === 'millesime@2024') {
       setIsLoggedIn(true);
+      localStorage.setItem('isLoggedIn', 'true');
     } else {
       alert('Usuario/constraseña invalidos!');
     }
+  };
+
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    localStorage.removeItem('isLoggedIn');
   };
 
   return (
@@ -30,7 +41,10 @@ function App() {
         />
       )}
       {isLoggedIn && (
-        <Video/>
+        <>
+          <button className='logout-button' onClick={handleLogout}>Salir</button>
+          <Video />
+        </>
       )}
     </div>
   );

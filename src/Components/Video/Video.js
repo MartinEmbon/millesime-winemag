@@ -1,26 +1,31 @@
 import React from 'react';
 import './WineVideoPage.css';
-import logo from './logo-millesime.jpg'; // Adjust the path to your logo image
+import logoImage from './logo-millesime.jpg'; // replace with your logo image path
 
 function Video() {
-    return (
-        <>
-        <div className="logo-container">
-          <img src={logo} alt="Millésimé Wine Magazine Logo" className="logo-image" />
-        </div>
-        <div className="video-container">
-          <iframe
-            title="Wine Video"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/XirDtoI4X7o"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-        <div className="video-description">
-        <h2 className="video-description__course-title">Curso: Vinos de Grecia</h2>
+
+ 
+
+
+  return (
+    <>
+      <div className="logo-container">
+        
+        <img src={logoImage} alt="Millésimé Wine Magazine Logo" className="logo-image" />
+      </div>
+      <div className="video-container">
+        <iframe
+          title="Wine Video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/XirDtoI4X7o"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+      <div className="video-description">
+      <h2 className="video-description__course-title">Curso: Vinos de Grecia</h2>
       <p className="video-description__course-description">
         Sumérgete en el fascinante mundo de los vinos griegos con nuestro curso especializado. Grecia, cuna de la viticultura, ofrece una variedad de vinos únicos y de alta calidad, que reflejan su rica historia y diversidad geográfica.
       </p>
@@ -55,23 +60,22 @@ function Video() {
       <p>
         Embárcate en este viaje sensorial y educativo, y conviértete en un conocedor de los vinos de Grecia. ¡Inscríbete ahora y descubre los secretos mejor guardados de esta antigua tradición vitivinícola!
       </p>
-    
-        </div>
-        <div className="download-section">
-          <h2>Descargá la presentación</h2>
-          <p>
+      </div>
+      <div className="download-section">
+        <h2>Descargá la presentación</h2>
+        <p>
           Descarga la presentación del video sobre vino para revisión y estudio.
-          </p>
-          <a
-            href="caminho_da_apresentacao.pdf"
-            download="apresentacao_vinho.pdf"
-            className="download-link"
-          >
-            Descargar presentación
-          </a>
-        </div>
-      </>
-    )
+        </p>
+        <a
+          href="caminho_da_apresentacao.pdf"
+          download="apresentacao_vinho.pdf"
+          className="download-link"
+        >
+          Descargar presentación
+        </a>
+      </div>
+    </>
+  );
 }
 
 export default Video;

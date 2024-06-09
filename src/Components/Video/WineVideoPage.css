@@ -105,3 +105,23 @@ li {
   max-width: 40%;
   height: auto;
 }
+
+.logout-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 8px 25px;
+  text-align: center;
+  text-decoration: none;
+ display: block;
+
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #0056b3;
+}
