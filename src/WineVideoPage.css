@@ -48,7 +48,7 @@ body {
   }
   
   .video-description p {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.5;
   }
   
@@ -69,13 +69,14 @@ body {
   }
   
   .download-section p {
-    font-size: 16px;
+    font-size: 12px !important;
     line-height: 1.5;
   }
   
   .download-link {
     display: inline-block;
     padding: 10px 20px;
+    font-size: 12px !important;
     background-color: #007bff;
     color: #fff;
     text-decoration: none;
@@ -86,3 +87,10 @@ body {
   .download-link:hover {
     background-color: #0056b3;
   }
+
+  
+li {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
