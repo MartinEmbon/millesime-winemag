@@ -52,7 +52,8 @@ body, html {
 .login-form input,
 .login-form button {
     display: block;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     margin-bottom: 15px;
 }
 
@@ -126,17 +127,14 @@ body, html {
         width: 90%;
         max-width: none;
     }
-    .login-form input{
-      padding: 10px 0;
-        
-    }
+   
 }
 
 @media (max-width: 480px) {
     .login-form {
         padding: 15px;
     }
-    
+
 
     .form-title {
         font-size: 20px;
