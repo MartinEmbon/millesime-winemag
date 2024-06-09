@@ -14,10 +14,10 @@ function WineVideoPage() {
   const handleLogin = (e) => {
     e.preventDefault();
   
-    if (username === 'milesime' && password === 'milesime@2024') {
+    if (username === 'millesime' && password === 'millesime@2024') {
       setIsLoggedIn(true);
     } else {
-      alert('Usuário ou senha inválidos!');
+      alert('Usuario/constraseña invalidos!');
     }
   };
 
