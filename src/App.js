@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Video from './Components/Video/Video';
 import Login from './Components/Login/Login';
 
-function WineVideoPage() {
+function App() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -36,4 +36,4 @@ function WineVideoPage() {
   );
 }
 
-export default WineVideoPage;
+export default App;

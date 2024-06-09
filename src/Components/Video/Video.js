@@ -1,8 +1,13 @@
+import React from 'react';
 import './WineVideoPage.css';
+import logo from './logo-millesime.jpg'; // Adjust the path to your logo image
+
 function Video() {
     return (
         <>
-        <h1 className="page-title">Millésimé Wine Magazine</h1>
+        <div className="logo-container">
+          <img src={logo} alt="Millésimé Wine Magazine Logo" className="logo-image" />
+        </div>
         <div className="video-container">
           <iframe
             title="Wine Video"
@@ -69,4 +74,4 @@ function Video() {
     )
 }
 
-export default Video
+export default Video;
