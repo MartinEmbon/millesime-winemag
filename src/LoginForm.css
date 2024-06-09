@@ -126,12 +126,17 @@ body, html {
         width: 90%;
         max-width: none;
     }
+    .login-form input{
+      padding: 10px 0;
+        
+    }
 }
 
 @media (max-width: 480px) {
     .login-form {
         padding: 15px;
     }
+    
 
     .form-title {
         font-size: 20px;

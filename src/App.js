@@ -13,8 +13,7 @@ function WineVideoPage() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Aqui você pode verificar o username e password
-    // Por simplicidade, estamos usando valores fixos
+  
     if (username === 'milesime' && password === 'milesime@2024') {
       setIsLoggedIn(true);
     } else {
